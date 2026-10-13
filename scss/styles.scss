@@ -1,0 +1,9 @@
+// styles.scss — точка входа: импортирует все партиалы проекта
+
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'components';
+@import 'catalog';
+@import 'profile';
+@import 'responsive';

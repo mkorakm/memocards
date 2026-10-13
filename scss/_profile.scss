@@ -1,0 +1,80 @@
+// _profile.scss — профиль: карточка пользователя + меню на всю высоту
+
+.profile-card {
+  @include card-surface;
+  @include flex(row, flex-start, center, wrap, 16px);
+  padding: 20px;
+
+  &__avatar {
+    @include flex(row, center, center);
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: $color-accent;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  &__info {
+    flex: 1 1 140px;
+    min-width: 0;
+  }
+  &__name {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  &__email {
+    font-size: 13px;
+    color: $color-muted;
+  }
+}
+
+// список пунктов занимает всю оставшуюся высоту (flex:1); строки
+// растягиваются поровну (align-content: stretch), поэтому пустого
+// места снизу нет
+.menu-list {
+  flex: 1;
+  @include flex(row, flex-start, stretch, wrap, $gap-sm);
+  align-content: stretch;
+}
+
+.menu-item {
+  @include card-surface;
+  @include flex(row, flex-start, center, nowrap, 14px);
+  flex: 0 0 100%;
+  min-height: 64px;
+  padding: 0 18px;
+  transition: transform 0.15s, box-shadow 0.15s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-hover;
+  }
+
+  &__icon {
+    @include flex(row, center, center);
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: $color-bg;
+    font-size: 20px;
+  }
+  &__text {
+    flex: 1;
+    @include flex(column, center, flex-start);
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &__sub {
+    font-size: 12px;
+    color: $color-muted;
+  }
+  &__chevron {
+    font-size: 22px;
+    color: $color-muted;
+  }
+}

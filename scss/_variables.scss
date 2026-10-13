@@ -1,0 +1,36 @@
+// _variables.scss — палитра, размеры, тени проекта MemoCards
+
+$color-bg:          #FDF0F0;
+$color-surface:     #FFFFFF;
+$color-header:      #D9A4A8;
+$color-nav:         #D9A4A8;
+$color-logo:        #8B2635;
+$color-accent:      #B23A48;
+$color-accent-dark: #8F2C38;
+$color-text:        #2B2B2B;
+$color-muted:       #7A6568;
+$color-border:      #F3DADC;
+
+$shadow-card:  0 2px 8px rgba(139, 38, 53, 0.08);
+$shadow-hover: 0 10px 24px rgba(139, 38, 53, 0.18);
+$shadow-bar:   0 2px 10px rgba(139, 38, 53, 0.15);
+
+$radius-card: 14px;
+$radius-chip: 10px;
+
+$gap-sm: 8px;
+$gap-md: 16px;
+$gap-lg: 24px;
+
+$header-height: 56px;
+$nav-height: 52px;
+
+$container-mobile:  520px;
+$container-tablet:  760px;
+$container-desktop: 1240px;
+
+$card-row-width:         240px;
+$card-row-width-desktop: 290px;
+
+$breakpoint-tablet:  700px;
+$breakpoint-desktop: 1000px;
